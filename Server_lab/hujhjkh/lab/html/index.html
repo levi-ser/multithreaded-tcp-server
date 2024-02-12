@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title style="color: blue">Compuetr networks 2023: Exercise 1</title>
+    <style>
+      .images {
+        display: flex;
+        /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+      }
+      .forms {
+        width: 20%;
+        height: 150px;
+      }
+      .form4 {
+        height: 100px;
+      }
+      label,
+      input {
+        justify-content: space-around;
+        flex-direction: column;
+      }
+      @keyframes moveRightLeft {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(100px);
+        }
+      }
+      .moving-text {
+        display: inline-block;
+        animation: moveRightLeft 2s infinite linear alternate;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <h1 class="moving-text" style="color: blue">
+      Compuetr networks 2023: Exercise 1
+    </h1>
+    <h2 style="color: red">Rustam Mirzoev</h2>
+    <div class="images" style="display: flex">
+      <img
+        style="width: 30%; height: 30%"
+        src="https://cdn.pixabay.com/photo/2023/11/29/11/55/pine-hills-8419433_1280.jpg"
+        alt="mountain"
+      />
+      <img
+        style="width: 30%; height: 30%"
+        src="https://cdn.pixabay.com/photo/2019/05/27/19/22/temple-4233412_1280.jpg"
+        alt=""
+      />
+    </div>
+    <a href="https://moodle.runi.ac.il/2024/course/view.php?id=2401572"
+      >Computer Networks site</a
+    >
+    <a href="https://www.youtube.com/">My fovorite site</a>
+    <hr />
+    <div class="forms">
+      <div class="form1">
+        <label for="sender">Sender:</label>
+        <input type="text" id="sender" name="sender" />
+      </div>
+      <div class="form2">
+        <label for="receiver">Receiver:</label>
+        <input type="text" id="receiver" name="receiver" />
+      </div>
+      <div class="form3">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" />
+      </div>
+      <div class="form4">
+        <label for="nessage_field">Message Field:</label>
+        <input
+          style="height: 60%"
+          type="text"
+          id="nessage_field"
+          name="nessage_field"
+        />
+      </div>
+      <form name="input" action="index.html" method="post"> <input type="submit" value="Check POST"> </form>
+      <div class="submit">
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
